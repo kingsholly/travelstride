@@ -1,7 +1,12 @@
-import React from 'react';
-const names= "femi"
+import React from "react";
+const intro = "emojipedia";
 function Heading() {
-return <header > <h1> Hello {names} </h1></header>
-  }
+  return (
+    <h1>
+      {" "}
+      <span> {intro} </span>
+    </h1>
+  );
+}
 
-  export default Heading
+export default Heading;

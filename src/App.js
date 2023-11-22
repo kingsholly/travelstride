@@ -1,38 +1,26 @@
+import "./index.css";
 import "./App.css";
-import { Contact, contacts } from "./contacts.js";
-import Entry from "./Entry.jsx";
-
-function Emoji() {
-  return (
-    <div>
-      <h1>
-        <span>emojipedia</span>
-      </h1>
-
-      <dl className="dictionary">
-        <Entry />
-      </dl>
-    </div>
-  );
-}
-
-function createCard(contact) {
-  return (
-    <Contact
-      name={contact.name}
-      key={contact.id}
-      id={contact.id}
-      src={contact.imgURL}
-      tel={contact.phone}
-      email={contact.email}
-    />
-  );
-}
+import styles from "./index.css";
+import About from "./components/about";
+import Pricing from "./components/pricing";
+import Features from "./components/features";
+import Cta from "./components/cta";
+import Blog from "./components/blog";
+import Clients from "./components/clients";
+import Faq from "./components/faq";
 
 function App() {
   return (
     <div>
-      <Emoji />
+      <About />
+
+      <Features />
+
+      <Pricing />
+      <Blog />
+      <Cta />
+      <Clients />
+      <Faq />
     </div>
   );
 }
